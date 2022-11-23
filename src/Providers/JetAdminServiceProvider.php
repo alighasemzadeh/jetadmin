@@ -10,11 +10,5 @@ class JetAdminServiceProvider extends ServiceProvider {
 
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'jetadmin');
 
-        $this->publishes(
-            [__DIR__ . '/../../resources/views' => resource_path('views/vendor/livewire-bootstrap-modal')],
-            ['livewire-bootstrap-modal', 'livewire-bootstrap-modal:views']
-        );
-
-        Livewire::component('modals', Modals::class);
     }
 }
