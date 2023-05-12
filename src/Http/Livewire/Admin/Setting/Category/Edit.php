@@ -46,7 +46,7 @@ class Edit extends Component
         $this->emitTo(\App\Http\Livewire\Admin\Setting\Category\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
-        $this->alert('success', __('bap.edited'));
+        $this->alert('success', __('jetadmin::edited'));
     }
 
     public function render()

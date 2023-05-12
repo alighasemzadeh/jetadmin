@@ -52,5 +52,12 @@
       "Database\\Seeders\\": "database/seeders/",
       "AliQasemzadeh\\JetAdmin\\": "src"
     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AliQasemzadeh\\Providers\\JetAdminServiceProvider"
+      ]
+    }
   }
 }

@@ -33,7 +33,7 @@ class Verify extends Component
         $this->validate(['verify_file' => 'required|image']);
 
         //TODO: Upload File
-        $this->alert('success', __('bap.request_sent'));
+        $this->alert('success', __('jetadmin::request_sent'));
     }
 
     public function mount()

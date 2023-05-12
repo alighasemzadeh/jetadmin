@@ -26,7 +26,7 @@ class UploadVerifyFile extends Component
 
         $this->verify_file->store('verify_files');
 
-        $this->alert('success', __('bap.uploaded'));
+        $this->alert('success', __('jetadmin::uploaded'));
     }
 
     public function render()

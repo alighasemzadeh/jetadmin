@@ -57,11 +57,11 @@ class Index extends Component
             return abort(403);
         }
 
-        $this->confirm(__('bap.are_you_sure'), [
+        $this->confirm(__('jetadmin::are_you_sure'), [
             'toast' => false,
             'position' => 'center',
             'showConfirmButton' => true,
-            'cancelButtonText' => __('bap.cancel'),
+            'cancelButtonText' => __('jetadmin::cancel'),
             'onConfirmed' => 'confirmedDelete',
             'onCancelled' => 'cancelledDelete'
         ]);
@@ -78,7 +78,7 @@ class Index extends Component
         $this->emit('updateList');
         $this->alert(
             'success',
-            __('bap.removed')
+            __('jetadmin::removed')
         );
     }
 
@@ -86,7 +86,7 @@ class Index extends Component
     {
         $this->alert(
             'success',
-            __('bap.cancelled')
+            __('jetadmin::cancelled')
         );
     }
 
@@ -123,11 +123,11 @@ class Index extends Component
             return abort(403);
         }
 
-        $this->confirm(__('bap.are_you_sure'), [
+        $this->confirm(__('jetadmin::are_you_sure'), [
             'toast' => false,
             'position' => 'center',
             'showConfirmButton' => true,
-            'cancelButtonText' => __('bap.cancel'),
+            'cancelButtonText' => __('jetadmin::cancel'),
             'onConfirmed' => 'deleteSelectedQuery',
             'onCancelled' => 'cancelledDelete'
         ]);
@@ -147,7 +147,7 @@ class Index extends Component
 
         $this->alert(
             'success',
-            __('bap.removed')
+            __('jetadmin::removed')
         );
     }
     public function render()

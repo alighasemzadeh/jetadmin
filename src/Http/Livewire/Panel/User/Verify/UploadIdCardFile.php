@@ -26,7 +26,7 @@ class UploadIdCardFile extends Component
 
         $this->id_card_file->store('id_card_files');
 
-        $this->alert('success', __('bap.uploaded'));
+        $this->alert('success', __('jetadmin::uploaded'));
     }
 
     public function render()
