@@ -23,6 +23,6 @@ class PanelLayout extends Component
      */
     public function render()
     {
-        return view('layouts.panel');
+        return view('jetadmin::layouts.panel');
     }
 }
