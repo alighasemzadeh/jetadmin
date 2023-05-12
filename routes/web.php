@@ -15,7 +15,7 @@ use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 */
 
 
-Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['referral']], function() {
+Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale(), 'middleware' => ['referral']], function() {
 
 
     Route::get('/', \AliQasemzadeh\Http\Livewire\App\Main\Index::class)->name('home');
