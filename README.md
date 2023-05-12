@@ -1,6 +1,42 @@
-# JetAdmin
-Easy way to install Laravel Base Admin Panel
+!! This is page is under development don't use it in production mode. !!
 
-After I made laravel [BAP (Base Admin Panel)](https://github.com/alighasemzadeh/bap) I decide to make a package for easy update and easy handling.
+✔️ Bootstrap Admin Panel
+======================
+>  Easy way to create Admin Panel.
+>
+## 🔌 Requirements
 
-### Under Development. After we complete this package we don't update bap, and we might replace in new branch in BAP.
+- PHP version: >= 8.0
+- Composer
+- Node.js
+
+
+## 🧰 Built with
+
+- Laravel 10
+- Livewire
+- Bootstrap 5
+- Tabler.io
+- SweetAlert2
+- spatie/laravel-permission
+- Vite Build Tools
+
+
+## 🧾 Installation
+
+1. Install clean version of laravel
+2. `composer install`
+3. `composer require aliqasemzadeh/jetadmin`
+4. Install dependencies:
+   `npm install`
+4. `cp .env.example .env`
+5. `php artisan key:generate`
+6. Set your `.env` with credentials to your database server (`DB_*` settings) and your domain config (`APP_URL`).
+7. `php artisan migrate --seed`
+8. Build frontend with `npm run production` for production.
+9. Run your server `php artisan serve`.
+10. Username:info@bap.local/Password:P@ssw0rd321
+
+
+Note:
+I decide to change Base Admin Panel to Bootstrap Admin Panel because is much better.
