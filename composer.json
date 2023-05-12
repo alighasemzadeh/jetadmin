@@ -3,7 +3,7 @@
   "description": "Laravel Bootstrap Admin Panel with all basic features by using livewire.",
   "keywords": ["admin", "bootstrap", "admin-panel", "laravel", "dashboard", "ticketing", "bootstrap", "tabler", "admin-ui"],
   "license": "MIT",
-  "minimum-stability": "dev",
+  "minimum-stability": "dev-master",
   "authors": [
     {
       "name": "Ali Qasemzadeh",
