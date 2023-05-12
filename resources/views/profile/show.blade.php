@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="title">
-        {{ __('bap.profile') }}
+        {{ __('jetadmin.profile') }}
     </x-slot>
 
     <div>

@@ -1,10 +1,10 @@
 <div>
     <x-slot name="title">
-        {{ __('bap.dashboard') }}
+        {{ __('jetadmin.dashboard') }}
     </x-slot>
     <x-slot name="breadcrumb">
         <ol class="breadcrumb breadcrumb-arrows" aria-label="breadcrumbs">
-            <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('admin.dashboard.index') }}">{{ __('bap.dashboard') }}</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="{{ route('admin.dashboard.index') }}">{{ __('jetadmin.dashboard') }}</a></li>
         </ol>
     </x-slot>
     <div class="row row-cards">
@@ -20,10 +20,10 @@
                         </div>
                         <div class="col">
                             <div class="font-weight-medium">
-                                {{ \App\Models\Ticket::count() }} {{ __('bap.tickets') }}
+                                {{ \App\Models\Ticket::count() }} {{ __('jetadmin.tickets') }}
                             </div>
                             <div class="text-muted">
-                                {{ \App\Models\Ticket::whereIn('status', ['new', 'customer'])->count() }} {{ __('bap.unanswered_ticket') }}
+                                {{ \App\Models\Ticket::whereIn('status', ['new', 'customer'])->count() }} {{ __('jetadmin.unanswered_ticket') }}
                             </div>
                         </div>
                     </div>
@@ -62,10 +62,10 @@
                         </div>
                         <div class="col">
                             <div class="font-weight-medium">
-                                {{ \App\Models\User::count() }} {{ __('bap.users') }}
+                                {{ \App\Models\User::count() }} {{ __('jetadmin.users') }}
                             </div>
                             <div class="text-muted">
-                                {{ \App\Models\User::whereDate('created_at', \Carbon\Carbon::today())->count() }} {{ __('bap.today_users') }}
+                                {{ \App\Models\User::whereDate('created_at', \Carbon\Carbon::today())->count() }} {{ __('jetadmin.today_users') }}
                             </div>
                         </div>
                     </div>

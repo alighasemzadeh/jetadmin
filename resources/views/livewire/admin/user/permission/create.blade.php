@@ -2,13 +2,13 @@
     <form wire:submit.prevent="create">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">{{ __('bap.create_permission') }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('bap.close') }}"></button>
+                <h5 class="modal-title">{{ __('jetadmin.create_permission') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('jetadmin.close') }}"></button>
             </div>
             <div class="modal-body">
                 <div class="mb-3">
-                    <label class="form-label" for="name">{{ __('bap.name') }}</label>
-                    <input type="text" wire:model="name" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="{{ __('bap.name') }}">
+                    <label class="form-label" for="name">{{ __('jetadmin.name') }}</label>
+                    <input type="text" wire:model="name" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="{{ __('jetadmin.name') }}">
                     <small class="form-hint">{{ __('permissions.'.$name) }}</small>
                     @error('name')
                     <div class="invalid-feedback">{{ $message }}</div>
@@ -16,8 +16,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('bap.close') }}</button>
-                <button type="submit" class="btn btn-primary">{{ __('bap.create') }}</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ __('jetadmin.close') }}</button>
+                <button type="submit" class="btn btn-primary">{{ __('jetadmin.create') }}</button>
             </div>
         </div>
     </form>
