@@ -2,28 +2,28 @@
     <form wire:submit.prevent="ban">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">{{ __('jetadmin.ban') }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('jetadmin.close') }}"></button>
+                <h5 class="modal-title">{{ __('bap.ban') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('bap.close') }}"></button>
             </div>
             <div class="modal-body">
                 <div class="mb-3">
-                    <label class="form-label" for="comment">{{ __('jetadmin.comment') }}</label>
-                    <input type="comment" wire:model="comment" class="form-control @error('comment') is-invalid @enderror" name="comment" placeholder="{{ __('jetadmin.comment') }}">
+                    <label class="form-label" for="comment">{{ __('bap.comment') }}</label>
+                    <input type="comment" wire:model="comment" class="form-control @error('comment') is-invalid @enderror" name="comment" placeholder="{{ __('bap.comment') }}">
                     @error('comment')
                     <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label" for="expire">{{ __('jetadmin.expire') }}</label>
-                    <input type="date" wire:model="expire" class="form-control @error('expire') is-invalid @enderror" name="expire" placeholder="{{ __('jetadmin.expire') }}">
+                    <label class="form-label" for="expire">{{ __('bap.expire') }}</label>
+                    <input type="date" wire:model="expire" class="form-control @error('expire') is-invalid @enderror" name="expire" placeholder="{{ __('bap.expire') }}">
                     @error('expire')
                     <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label" for="permanent">{{ __('jetadmin.permanent') }}</label>
+                    <label class="form-label" for="permanent">{{ __('bap.permanent') }}</label>
                     <input type="checkbox" wire:model="expire" class="@error('permanent') is-invalid @enderror" name="permanent" placeholder="{{ __('bap.permanent') }}">
                     @error('permanent')
                     <div class="invalid-feedback">{{ $message }}</div>

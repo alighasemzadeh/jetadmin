@@ -2,13 +2,13 @@
     <form wire:submit.prevent="create">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">{{ __('jetadmin.create_user') }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('jetadmin.close') }}"></button>
+                <h5 class="modal-title">{{ __('bap.create_user') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('bap.close') }}"></button>
             </div>
             <div class="modal-body">
                 <div class="mb-3">
-                    <label class="form-label" for="email">{{ __('jetadmin.email') }}</label>
-                    <input type="email" wire:model="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="{{ __('jetadmin.email') }}">
+                    <label class="form-label" for="email">{{ __('bap.email') }}</label>
+                    <input type="email" wire:model="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="{{ __('bap.email') }}">
                     @error('email')
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
