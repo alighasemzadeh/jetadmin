@@ -2,8 +2,8 @@
 
 namespace AliQasemzadeh\Http\Livewire\Admin\User\Team;
 
-use AliQasemzadeh\Models\\Team;
-use AliQasemzadeh\Models\\User;
+use AliQasemzadeh\Models\Team;
+use AliQasemzadeh\Models\User;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 

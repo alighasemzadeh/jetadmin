@@ -2,10 +2,10 @@
 
 namespace AliQasemzadeh\Http\Livewire\Panel\Support\Ticket;
 
-use AliQasemzadeh\Models\\Category;
-use AliQasemzadeh\Models\\Ticket;
-use AliQasemzadeh\Models\\TicketFile;
-use AliQasemzadeh\Models\\TicketReplay;
+use AliQasemzadeh\Models\Category;
+use AliQasemzadeh\Models\Ticket;
+use AliQasemzadeh\Models\TicketFile;
+use AliQasemzadeh\Models\TicketReplay;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithFileUploads;

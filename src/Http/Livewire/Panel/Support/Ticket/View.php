@@ -2,9 +2,9 @@
 
 namespace AliQasemzadeh\Http\Livewire\Panel\Support\Ticket;
 
-use AliQasemzadeh\Models\\Ticket;
-use AliQasemzadeh\Models\\TicketFile;
-use AliQasemzadeh\Models\\TicketReplay;
+use AliQasemzadeh\Models\Ticket;
+use AliQasemzadeh\Models\TicketFile;
+use AliQasemzadeh\Models\TicketReplay;
 use Carbon\Carbon;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;

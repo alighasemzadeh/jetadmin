@@ -2,7 +2,7 @@
 
 namespace AliQasemzadeh\Http\Livewire\Admin\Content\Article;
 
-use AliQasemzadeh\Models\\Article;
+use AliQasemzadeh\Models\Article;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;

@@ -2,7 +2,7 @@
 
 namespace AliQasemzadeh\Http\Livewire\Panel\User;
 
-use AliQasemzadeh\Models\\UserVerify;
+use AliQasemzadeh\Models\UserVerify;
 use Illuminate\Support\Facades\Auth;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;

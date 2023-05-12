@@ -2,7 +2,7 @@
 
 namespace AliQasemzadeh\Http\Livewire\Panel\Support\Ticket;
 
-use AliQasemzadeh\Models\\Ticket;
+use AliQasemzadeh\Models\Ticket;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;

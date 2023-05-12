@@ -2,7 +2,7 @@
 
 namespace AliQasemzadeh\Http\Livewire\App\FAQ;
 
-use AliQasemzadeh\Models\\FrequentlyAskedQuestion;
+use AliQasemzadeh\Models\FrequentlyAskedQuestion;
 use Livewire\Component;
 
 class Index extends Component

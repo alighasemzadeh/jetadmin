@@ -2,8 +2,8 @@
 
 namespace AliQasemzadeh\Http\Livewire\Admin\Setting\Category;
 
-use AliQasemzadeh\Models\\Category;
-use AliQasemzadeh\Models\\User;
+use AliQasemzadeh\Models\Category;
+use AliQasemzadeh\Models\User;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;
