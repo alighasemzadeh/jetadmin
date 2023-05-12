@@ -1,6 +1,6 @@
 !! This is page is under development don't use it in production mode. !!
 
-✔️ Bootstrap Admin Panel
+✔️ Bootstrap Admin Panel (This is new version of bap with simple update and installation.)
 ======================
 >  Easy way to create Admin Panel.
 >
