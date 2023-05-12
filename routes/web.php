@@ -15,7 +15,9 @@ use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 */
 
 
-Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale(), 'middleware' => ['referral']], function() {
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['referral']], function() {
+
+
 
 
     Route::get('/', \App\Http\Livewire\App\Main\Index::class)->name('home');
@@ -33,7 +35,7 @@ Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalizati
         Route::any('/faqs/index', \App\Http\Livewire\App\FAQ\Index::class)->name('faqs.index');
 
 
-        Route::group(['prefix' => config('bap.panel-prefix-url')], function() {
+        Route::group(['prefix' => config('jetadmin.panel-prefix-url')], function() {
             Route::get('/dashboard/index', \App\Http\Livewire\Panel\Dashboard\Index::class)->name('panel.dashboard.index');
 
             Route::get('/support/ticket/index', \App\Http\Livewire\Panel\Support\Ticket\Index::class)->name('panel.support.ticket.index');
@@ -43,7 +45,7 @@ Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalizati
         });
 
 
-        Route::group(['prefix' => config('bap.admin-prefix-url'), 'middleware' => ['auth:sanctum', 'verified', 'admin']], function () {
+        Route::group(['prefix' => config('jetadmin.admin-prefix-url'), 'middleware' => ['auth:sanctum', 'verified', 'admin']], function () {
             Route::get('/dashboard/index', \App\Http\Livewire\Admin\Dashboard\Index::class)->name('admin.dashboard.index');
             Route::get('/user/index', \App\Http\Livewire\Admin\User\Index::class)->name('admin.user.index');
             Route::get('/user/role/index', \App\Http\Livewire\Admin\User\Role\Index::class)->name('admin.user.role.index');
@@ -51,6 +53,7 @@ Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalizati
             Route::get('/user/permission/index', \App\Http\Livewire\Admin\User\Permission\Index::class)->name('admin.user.permission.index');
 
             Route::get('/setting/category/index', \App\Http\Livewire\Admin\Setting\Category\Index::class)->name('admin.setting.category.index');
+            Route::get('/setting/manage/index', \App\Http\Livewire\Admin\Setting\Manage\Index::class)->name('admin.setting.manage.index');
 
             Route::get('/content/article/index', \App\Http\Livewire\Admin\Content\Article\Index::class)->name('admin.content.article.index');
             Route::get('/content/faq/index', \App\Http\Livewire\Admin\Content\FAQ\Index::class)->name('admin.content.faq.index');
@@ -64,3 +67,4 @@ Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalizati
     });
 
 });
+

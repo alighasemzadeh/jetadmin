@@ -2,20 +2,20 @@
     <form wire:submit.prevent="edit">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">{{ __('bap.edit_user') }}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('bap.close') }}"></button>
+                <h5 class="modal-title">{{ __('jetadmin.edit_user') }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('jetadmin.close') }}"></button>
             </div>
             <div class="modal-body">
                 <div class="mb-3">
-                    <label class="form-label" for="email">{{ __('bap.email') }}</label>
-                    <input type="email" wire:model="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="{{ __('bap.email') }}">
+                    <label class="form-label" for="email">{{ __('jetadmin.email') }}</label>
+                    <input type="email" wire:model="email" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="{{ __('jetadmin.email') }}">
                     @error('email')
                     <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label" for="first_name">{{ __('bap.first_name') }}</label>
+                    <label class="form-label" for="first_name">{{ __('jetadmin.first_name') }}</label>
                     <input type="text" wire:model="first_name" class="form-control @error('first_name') is-invalid @enderror" name="first_name" placeholder="{{ __('bap.first_name') }}">
                     @error('first_name')
                     <div class="invalid-feedback">{{ $message }}</div>

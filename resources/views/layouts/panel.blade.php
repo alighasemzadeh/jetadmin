@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ __('bap.direction') }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" dir="{{ __('jetadmin.direction') }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@if(isset($title)){{ $title }} - @endif{{ config('bap.name', 'BAP') }}</title>
+    <title>@if(isset($title)){{ $title }} - @endif{{ config('jetadmin.name', 'BAP') }}</title>
 
     @include('layouts.global.favicon')
 
@@ -21,7 +21,7 @@
 <body class="antialiased" x-data="{ darkTheme: $persist(false) }" :class="darkTheme ? '' : 'theme-dark'">
 <div class="wrapper">
     <aside class="navbar navbar-vertical navbar-expand-lg navbar-dark">
-        <div class="{{ config('bap.container-panel', 'container') }}">
+        <div class="{{ config('jetadmin.container-panel', 'container') }}">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,7 +42,7 @@
 	                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="13" r="2" /><line x1="13.45" y1="11.55" x2="15.5" y2="9.5" /><path d="M6.4 20a9 9 0 1 1 11.2 0z" /></svg>
                                     </span>
                             <span class="nav-link-title">
-                                      {{ __('bap.dashboard') }}
+                                      {{ __('jetadmin.dashboard') }}
                                     </span>
                         </a>
                     </li>
@@ -53,17 +53,17 @@
 	                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="9" /><path d="M10 16.5l2 -3l2 3m-2 -3v-2l3 -1m-6 0l3 1" /><circle cx="12" cy="7.5" r=".5" fill="currentColor" /></svg>
                                   </span>
                                 <span class="nav-link-title">
-                                    {{ __('bap.support') }}
+                                    {{ __('jetadmin.support') }}
                                   </span>
                             </a>
                             <div class="dropdown-menu @if(\Illuminate\Support\Facades\Route::is('panel.support.*')) show @endif " data-bs-popper="none">
 
                                     <a class="dropdown-item @if(\Illuminate\Support\Facades\Route::is('panel.support.ticket.index')) active @endif @if(\Illuminate\Support\Facades\Route::is('panel.support.ticket.view')) active @endif" href="{{ route('panel.support.ticket.index') }}">
-                                        {{ __('bap.tickets') }}
+                                        {{ __('jetadmin.tickets') }}
                                     </a>
 
                                     <a class="dropdown-item @if(\Illuminate\Support\Facades\Route::is('panel.support.ticket.create')) active @endif" href="{{ route('panel.support.ticket.create') }}">
-                                        {{ __('bap.create_ticket') }}
+                                        {{ __('jetadmin.create_ticket') }}
                                     </a>
 
                             </div>
@@ -76,7 +76,7 @@
     @include('layouts.global.header')
     <!-- Page Content -->
     <div class="page-wrapper">
-        <main class="{{ config('bap.container', 'container-fluid') }}">
+        <main class="{{ config('jetadmin.container', 'container-fluid') }}">
             @if(isset($pretitle))
                 <div class="page-pretitle">
                     {{ $pretitle }}
@@ -103,7 +103,7 @@
                 {{ $slot }}
             </div>
         </main>
-        @include('layouts.global.footer', ['container' => config('bap.container-panel')])
+        @include('layouts.global.footer', ['container' => config('jetadmin.container-panel')])
     </div>
 </div>
 
