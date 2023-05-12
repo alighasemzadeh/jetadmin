@@ -31,6 +31,6 @@ class UploadIdCardFile extends Component
 
     public function render()
     {
-        return view('livewire.panel.user.verify.upload-id-card-file');
+        return view('jetadmin::livewirepanel.user.verify.upload-id-card-file');
     }
 }

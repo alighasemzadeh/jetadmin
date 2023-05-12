@@ -59,6 +59,6 @@ class Create extends Component
     public function render()
     {
         $categories = Category::where('type', 'article')->get();
-        return view('livewire.admin.content.article.create', compact('categories'));
+        return view('jetadmin::livewire.admin.content.article.create', compact('categories'));
     }
 }

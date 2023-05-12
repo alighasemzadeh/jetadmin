@@ -37,6 +37,6 @@ class Create extends Component
 
     public function render()
     {
-        return view('livewire.admin.content.f-a-q.create');
+        return view('jetadmin::livewire.admin.content.f-a-q.create');
     }
 }

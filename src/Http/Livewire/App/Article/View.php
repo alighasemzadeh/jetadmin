@@ -16,6 +16,6 @@ class View extends Component
 
     public function render()
     {
-        return view('livewire.app.article.view');
+        return view('jetadmin::livewireapp.article.view');
     }
 }

@@ -47,6 +47,6 @@ class Edit extends Component
             return abort(403);
         }
 
-        return view('livewire.admin.user.permission.edit');
+        return view('jetadmin::livewire.admin.user.permission.edit');
     }
 }

@@ -48,6 +48,6 @@ class Edit extends Component
             return abort(403);
         }
 
-        return view('livewire.admin.user.role.edit');
+        return view('jetadmin::livewire.admin.user.role.edit');
     }
 }
