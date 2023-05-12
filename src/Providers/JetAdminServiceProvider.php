@@ -13,10 +13,21 @@ class JetAdminServiceProvider extends ServiceProvider {
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        $this->publishes([
+            __DIR__.'/../database/migrations/' => database_path('migrations')
+        ], 'jetadmin');
 
         $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'jetadmin');
+        $this->publishes([
+            __DIR__.'/../resources/lang' => $this->app->langPath('vendor/jetadmin'),
+        ]);
 
         $this->loadViewsFrom(__DIR__ . '/../../resources/views', 'jetadmin');
+
+        $this->publishes([
+            __DIR__.'/../resources/views' => resource_path('views/vendor/jetadmin'),
+        ]);
+
 
     }
 }
