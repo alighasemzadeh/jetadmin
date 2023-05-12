@@ -13,7 +13,7 @@
   "require": {
     "php": "^8.0|^8.1",
     "aliqasemzadeh/livewire-bootstrap-modal": "dev-master",
-    "arcanedev/log-viewer": "^10.*",
+    "arcanedev/log-viewer": "^10.0",
     "creativeorange/gravatar": "^1.0",
     "cybercog/laravel-ban": "^4.7",
     "guzzlehttp/guzzle": "^7.2",
@@ -37,7 +37,7 @@
     "yadahan/laravel-authentication-log": "^1.4"
   },
   "require-dev": {
-    "spatie/laravel-ignition": "^2.*",
+    "spatie/laravel-ignition": "^2.0",
     "fakerphp/faker": "^1.9.1",
     "laravel/sail": "^1.0.1",
     "mockery/mockery": "^1.4.4",
