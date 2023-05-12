@@ -3,7 +3,7 @@
 namespace AliQasemzadeh\Http\Livewire\Admin\User;
 
 use App\Exports\UsersExport;
-use App\Models\User;
+use AliQasemzadeh\Models\\User;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;

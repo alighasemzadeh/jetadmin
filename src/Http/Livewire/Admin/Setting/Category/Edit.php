@@ -2,7 +2,7 @@
 
 namespace AliQasemzadeh\Http\Livewire\Admin\Setting\Category;
 
-use App\Models\Category;
+use AliQasemzadeh\Models\\Category;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 

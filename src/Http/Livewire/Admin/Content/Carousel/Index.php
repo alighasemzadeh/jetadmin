@@ -2,7 +2,7 @@
 
 namespace AliQasemzadeh\Http\Livewire\Admin\Content\Carousel;
 
-use App\Models\Carousel;
+use AliQasemzadeh\Models\\Carousel;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;

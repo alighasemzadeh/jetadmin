@@ -2,7 +2,7 @@
 
 namespace AliQasemzadeh\Http\Livewire\Panel\User\Verify;
 
-use App\Models\UserVerify;
+use AliQasemzadeh\Models\\UserVerify;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithFileUploads;

@@ -2,8 +2,8 @@
 
 namespace AliQasemzadeh\Http\Livewire\Admin\Content\Article;
 
-use App\Models\Article;
-use App\Models\Category;
+use AliQasemzadeh\Models\\Article;
+use AliQasemzadeh\Models\\Category;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;

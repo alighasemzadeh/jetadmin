@@ -2,8 +2,8 @@
 
 namespace AliQasemzadeh\Http\Livewire\Admin\Content\FAQ;
 
-use App\Models\Article;
-use App\Models\FrequentlyAskedQuestion;
+use AliQasemzadeh\Models\\Article;
+use AliQasemzadeh\Models\\FrequentlyAskedQuestion;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 use Livewire\Component;
 use Livewire\WithPagination;

@@ -2,7 +2,7 @@
 
 namespace AliQasemzadeh\Http\Livewire\Admin\User\Team;
 
-use App\Models\Team;
+use AliQasemzadeh\Models\\Team;
 use Livewire\Component;
 
 class Users extends Component
