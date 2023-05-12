@@ -25,7 +25,7 @@ class Create extends Component
 
         Permission::create(['guard_name' => 'web', 'name' => $this->name]);
 
-        $this->emitTo(\App\Http\Livewire\Admin\User\Permission\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\User\Permission\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
         $this->alert('success', __('jetadmin::created'));

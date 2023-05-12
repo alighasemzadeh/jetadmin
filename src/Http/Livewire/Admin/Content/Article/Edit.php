@@ -63,7 +63,7 @@ class Edit extends Component
         $article->description = $this->description;
         $article->save();
 
-        $this->emitTo(\App\Http\Livewire\Admin\Content\Article\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\Content\Article\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
         $this->alert('success', __('jetadmin::edited'));

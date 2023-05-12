@@ -28,7 +28,7 @@ class Create extends Component
         $faq->answer = $this->answer;
         $faq->save();
 
-        $this->emitTo(\App\Http\Livewire\Admin\Content\FAQ\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\Content\FAQ\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
         $this->alert('success', __('jetadmin::created'));

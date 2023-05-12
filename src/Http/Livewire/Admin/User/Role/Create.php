@@ -23,7 +23,7 @@ class Create extends Component
 
         Role::create(['name' => $this->name]);
 
-        $this->emitTo(\App\Http\Livewire\Admin\User\Role\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\User\Role\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
         $this->alert('success', __('jetadmin::created'));

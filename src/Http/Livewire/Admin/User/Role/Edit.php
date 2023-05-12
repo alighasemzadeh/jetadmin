@@ -36,7 +36,7 @@ class Edit extends Component
         $this->role->name = $this->name;
         $this->role->save();
 
-        $this->emitTo(\App\Http\Livewire\Admin\User\Permission\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\User\Permission\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
         $this->alert('success', __('jetadmin::edited'));

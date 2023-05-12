@@ -50,7 +50,7 @@ class Create extends Component
         $image = $this->image->store('articles');
         $article->addMedia(storage_path('app/' . $image))->toMediaCollection();
 
-        $this->emitTo(\App\Http\Livewire\Admin\Content\Article\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\Content\Article\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
         $this->alert('success', __('jetadmin::created'));

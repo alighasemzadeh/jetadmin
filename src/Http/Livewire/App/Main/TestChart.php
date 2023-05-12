@@ -1,6 +1,6 @@
 <?php
 
-namespace AliQasemzadeh\Http\Livewire\App\Main;
+namespace AliQasemzadeh\Http\Livewire\AliQasemzadeh\Main;
 
 use Asantibanez\LivewireCharts\Models\ColumnChartModel;
 use Livewire\Component;

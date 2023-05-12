@@ -61,7 +61,7 @@ class Edit extends Component
         $carousel->save();
 
 
-        $this->emitTo(\App\Http\Livewire\Admin\Content\Carousel\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\Content\Carousel\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
         $this->alert('success', __('jetadmin::created'));

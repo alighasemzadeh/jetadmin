@@ -1,6 +1,6 @@
 <?php
 
-namespace AliQasemzadeh\Http\Livewire\App\Notification;
+namespace AliQasemzadeh\Http\Livewire\AliQasemzadeh\Notification;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Notification;

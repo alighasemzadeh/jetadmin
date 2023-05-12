@@ -54,7 +54,7 @@ class Edit extends Component
         }
         $this->user->save();
 
-        $this->emitTo(\App\Http\Livewire\Admin\User\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\User\Index::getName(), 'updateList');
         $this->emit('hideModal');
 
         $this->alert('success', __('jetadmin::edited'));

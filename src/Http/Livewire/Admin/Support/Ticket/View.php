@@ -73,7 +73,7 @@ class View extends Component
             }
         }
 
-        $this->emitTo(\App\Http\Livewire\Admin\Support\Ticket\Index::getName(), 'updateList');
+        $this->emitTo(\AliQasemzadeh\Http\Livewire\Admin\Support\Ticket\Index::getName(), 'updateList');
 
         $this->alert('success', __('jetadmin::replied'));
     }
