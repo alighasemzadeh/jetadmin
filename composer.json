@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": "^8.0|^8.1|^8.2",
+    "php": "^8.0|^8.1",
     "aliqasemzadeh/livewire-bootstrap-modal": "dev-master",
     "arcanedev/log-viewer": "^10.*",
     "creativeorange/gravatar": "^1.0",
