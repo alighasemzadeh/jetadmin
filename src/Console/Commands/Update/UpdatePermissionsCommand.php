@@ -1,6 +1,6 @@
 <?php
 
-namespace AliQasemzadeh\JetAdmin\Console\Commands;
+namespace AliQasemzadeh\JetAdmin\Console\Commands\Update;
 
 use Illuminate\Console\Command;
 use Spatie\Permission\Models\Permission;
@@ -13,7 +13,7 @@ class UpdatePermissionsCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'update:permissions';
+    protected $signature = 'jetadmin:update permissions';
 
     /**
      * The console command description.
