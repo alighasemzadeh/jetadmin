@@ -1,12 +1,12 @@
 {
   "name": "alighasemzadeh/jetadmin",
-  "description": "Tabler Starter kit for laravel and much more",
+  "description": "Laravel Bootstrap Admin Panel with all basic features by using livewire.",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
     {
-      "name": "Ali Ghasemzadeh",
-      "email": "alighasemzadeh.dev@gmail.com",
+      "name": "Ali Qasemzadeh",
+      "email": "AliQasemzadeh7@gmail.com",
       "role": "Developer"
     }
   ],
