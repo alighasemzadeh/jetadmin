@@ -15,9 +15,9 @@ class CreateUserVerifiesTable extends Migration
     {
         Schema::create('user_verifies', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id');
+            $table->bigInteger('user_id')->index();
             $table->string('random_string')->nullable();
-            $table->string('status')->default('new')->nullable(); //new, wait,accept,reject
+            $table->string('status')->default('new')->nullable()->index(); //new, wait,accept,reject
             $table->string('id_card_file')->nullable();
             $table->string('verify_file')->nullable();
             $table->string('first_name')->nullable();

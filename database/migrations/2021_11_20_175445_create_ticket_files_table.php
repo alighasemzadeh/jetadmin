@@ -15,8 +15,8 @@ class CreateTicketFilesTable extends Migration
     {
         Schema::create('ticket_files', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id');
-            $table->bigInteger('ticket_id');
+            $table->bigInteger('user_id')->index();
+            $table->bigInteger('ticket_id')->index();
             $table->bigInteger('ticket_replay_id')->nullable();
             $table->string('file');
             $table->string('title');

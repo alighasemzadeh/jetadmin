@@ -15,8 +15,8 @@ class CreateTicketReplaysTable extends Migration
     {
         Schema::create('ticket_replays', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('user_id');
-            $table->bigInteger('ticket_id');
+            $table->bigInteger('user_id')->index();
+            $table->bigInteger('ticket_id')->index();
             $table->longText('body');
             $table->ipAddress('ip')->nullable();
             $table->timestamps();
