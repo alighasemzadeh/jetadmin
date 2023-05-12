@@ -55,7 +55,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "AliQasemzadeh\\Providers\\JetAdminServiceProvider"
+        "AliQasemzadeh\\JetAdmin\\Providers\\JetAdminServiceProvider"
       ]
     }
   }
