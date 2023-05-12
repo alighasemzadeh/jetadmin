@@ -1,6 +1,7 @@
 {
   "name": "alighasemzadeh/jetadmin",
   "description": "Laravel Bootstrap Admin Panel with all basic features by using livewire.",
+  "keywords": ["admin", "bootstrap", "admin-panel", "laravel", "dashboard", "ticketing"],
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
@@ -50,7 +51,7 @@
       "App\\": "app/",
       "Database\\Factories\\": "database/factories/",
       "Database\\Seeders\\": "database/seeders/",
-      "AliGhasemzadeh\\JetAdmin\\": "src"
+      "AliQasemzadeh\\JetAdmin\\": "src"
     }
   }
 }
