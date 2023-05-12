@@ -1,6 +1,6 @@
 <?php
 
-namespace AliQasemzadeh\Permission\Models;
+namespace AliQasemzadeh\Models;
 
 use EloquentFilter\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
