@@ -10,6 +10,7 @@
       "role": "Developer"
     }
   ],
+  "minimum-stability": "dev",
   "require": {
     "php": "^8.0|^8.1|^8.2",
     "aliqasemzadeh/livewire-bootstrap-modal": "dev-master",
